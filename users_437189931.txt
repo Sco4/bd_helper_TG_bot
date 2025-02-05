@@ -1,0 +1,23 @@
+[
+  {
+    "user_name": "Соня",
+    "user_bd": "9-04-2025",
+    "user_bd_date": "2025-04-09T12:43:25.622Z",
+    "user_gift": "no data",
+    "user_hobby": "no data"
+  },
+  {
+    "user_name": "Соня2",
+    "user_bd": "no data",
+    "user_bd_date": "2025-04-09T12:43:25.622Z",
+    "user_gift": "no data",
+    "user_hobby": "no data"
+  },
+  {
+    "user_name": "Соня3",
+    "user_bd": "no data",
+    "user_bd_date": "2025-02-12T13:45:57.941Z",
+    "user_gift": "no data",
+    "user_hobby": "no data"
+  }
+]
