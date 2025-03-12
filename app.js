@@ -1,15 +1,20 @@
 import express from 'express';
-import {PORT, TOKEN} from './config.js';
+//import {PORT} from './config.js';
 import {Telegraf} from 'telegraf';
 import Markup from 'telegraf/markup';
 import {getMenu, showFriendsFn, getMenuAdd, monthsKeyboard, likeDislikeKeyboard, editKeyboard, deleteKeyboard} from './keyboard.js'
 import fs from 'fs';
 import g from 'file-saver';
+import dotenv from 'dotenv'
+dotenv.config()
+
 
 
 const app = express();
 //dsfdsf
-const bot = new Telegraf(TOKEN);
+const bot = new Telegraf(process.env.TOKEN);
+console.log('Bot Token:', process.env.TOKEN);
+const PORT = process.env.PORT;
 let name = 'default_name';
 let fsm = '';
 let bdayFlag = false;
