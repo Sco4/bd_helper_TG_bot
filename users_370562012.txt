@@ -1,21 +1,20 @@
 [
   {
-    "user_name": "Stas",
-    "user_bd": "14-05-1986",
-    "user_bd_date": "1986-05-14T11:42:34.061Z",
+    "user_name": "Stas1",
+    "user_bd": "no data",
+    "user_bd_date": "no data",
     "user_gift": "no data"
   },
   {
-    "user_name": "Cnfc22",
+    "user_name": "Stas2",
     "user_bd": "no data",
-    "user_bd_date": "2025-04-09T12:43:25.622Z",
-    "user_gift": "no data",
-    "user_hobby": "no data"
+    "user_bd_date": "no data",
+    "user_gift": "no data"
   },
   {
-    "user_name": "stas3",
+    "user_name": "Stas3",
     "user_bd": "no data",
-    "user_bd_date": "2025-02-12T13:45:57.941Z",
+    "user_bd_date": "no data",
     "user_gift": "no data",
     "user_hobby": "no data"
   }
