@@ -22,7 +22,7 @@ let users = [];
 let fileName = null;
 
 function getUserFileName(userID){
-    return `users_${userID}.txt`
+    return `users.txt`
 }
 
 
