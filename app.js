@@ -20,7 +20,7 @@ let bdayFlag = false;
 let users = [];
 let fileName = null;
 
-function getUserFileName(userID){
+function getUserFileName(){
     return `users.txt`
 }
 
@@ -136,7 +136,7 @@ bot.action('cancel_delete', (ctx) =>{
 
 async function saveToFile(users,ctx) {
 try{
-    await fs.promises.writeFile(getUserFileName(ctx.from.id) , JSON.stringify(users, null, 2));
+    await fs.promises.writeFile(getUserFileName() , JSON.stringify(users, null, 2));
     console.log('Оновлення файлу завершено');
     }
 
@@ -221,9 +221,9 @@ bot.hears("Запам'ятати друга",ctx =>{
 
     let userID = ctx.from.id
 
-    if(fs.existsSync(getUserFileName(userID))){
+    if(fs.existsSync(getUserFileName())){
 
-        let data = fs.readFileSync(getUserFileName(userID));
+        let data = fs.readFileSync(getUserFileName());
         users = JSON.parse(data)
     
     }
@@ -253,7 +253,7 @@ bot.hears("Запам'ятати друга",ctx =>{
  bot.hears("Подивитись друзів",ctx =>{
    
     let userID = ctx.from.id
-    let data = fs.readFileSync(getUserFileName(userID));
+    let data = fs.readFileSync(getUserFileName());
     users = JSON.parse(data)
    // users = JSON.parse(getUserFileName(userID))
 if(users.length ===0){
@@ -315,7 +315,7 @@ bot.hears("Подивитись всіх",ctx =>{
     let frUsers; 
     let userID = ctx.from.id;
 
-    fs.readFile(getUserFileName(userID),(err, jsonData) =>{
+    fs.readFile(getUserFileName(),(err, jsonData) =>{
         if(err){
             console.error('Помилка читання з файлу',err);
             return;
