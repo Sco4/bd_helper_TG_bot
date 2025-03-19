@@ -13,7 +13,6 @@ dotenv.config()
 const app = express();
 //dsfdsf
 const bot = new Telegraf(process.env.TOKEN);
-console.log('Bot Token:', process.env.TOKEN);
 const PORT = process.env.PORT;
 let name = 'default_name';
 let fsm = '';
